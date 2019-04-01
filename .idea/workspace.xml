@@ -19,8 +19,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="199" column="9" lean-forward="true" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+            <state relative-caret-position="489">
+              <caret line="214" column="12" selection-start-line="214" selection-start-column="12" selection-end-line="214" selection-end-column="12" />
+              <folding>
+                <element signature="e#7381#7382#0" expanded="true" />
+                <element signature="e#7459#7460#0" expanded="true" />
+                <element signature="e#7718#7719#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,12 +150,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554108907909</updated>
-      <workItem from="1554108909268" duration="2817000" />
+      <workItem from="1554108909268" duration="3161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2817000" />
+    <option name="totallyTimeSpent" value="3161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -229,8 +234,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="199" column="9" lean-forward="true" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+        <state relative-caret-position="489">
+          <caret line="214" column="12" selection-start-line="214" selection-start-column="12" selection-end-line="214" selection-end-column="12" />
+          <folding>
+            <element signature="e#7381#7382#0" expanded="true" />
+            <element signature="e#7459#7460#0" expanded="true" />
+            <element signature="e#7718#7719#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
