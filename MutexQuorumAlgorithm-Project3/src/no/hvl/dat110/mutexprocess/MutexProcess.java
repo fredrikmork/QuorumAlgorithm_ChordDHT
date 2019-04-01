@@ -172,11 +172,9 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		// count the number of yes (i.e. where message.isAcknowledged = true)
 		// check if it is the majority or not
 		// return the decision (true or false)
+		counter = (int) queueACK.stream().filter(x -> x.isAcknowledged()).count();
 
-				
-				
-				
-		return false;			// change this to the result of the vote
+		return counter >= quorum;
 	}
 
 		
