@@ -94,7 +94,7 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		// multicast read request to start the voting to N/2 + 1 replicas (majority) - optimal. You could as well send to all the replicas that have the file
 		
 		
-		return false;		// change to the election result
+		return multicastMessage(message, quorum);		// change to the election result
 	}
 	
 	public boolean requestReadOperation(Message message) throws RemoteException {
@@ -108,7 +108,7 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		// multicast read request to start the voting to N/2 + 1 replicas (majority) - optimal. You could as well send to all the replicas that have the file
 		
 		
-		return false;  // change to the election result
+		return multicastMessage(message, quorum);  // change to the election result
 	}
 	
 	// multicast message to N/2 + 1 processes (random processes)
@@ -118,15 +118,25 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		
 		 
 		// randomize - shuffle list each time - to get random processes each time
-		
+		Collections.shuffle(replicas);
 		// multicast message to N/2 + 1 processes (random processes) - block until feedback is received
-		
+		synchronized (queueACK){
+			for (int i = 0; i < n; i++){
+				String s = replicas.get(i);
+				try {
+					ProcessInterface pI = Util.registryHandle(s);
+					queueACK.add(pI.onMessageReceived(message));
+				} catch (NotBoundException e){
+					e.printStackTrace();
+				}
+			}
+		}
 		// do something with the acknowledgement you received from the voters - Idea: use the queueACK to collect GRANT/DENY messages and make sure queueACK is synchronized!!!
 		
 		// compute election result - Idea call majorityAcknowledged()
 		
 		
-		return false;  // change to the election result			
+		return majorityAcknowledged();  // change to the election result
 
 	}
 	
