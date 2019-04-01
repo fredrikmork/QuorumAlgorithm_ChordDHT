@@ -173,7 +173,6 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		// check if it is the majority or not
 		// return the decision (true or false)
 		counter = (int) queueACK.stream().filter(x -> x.isAcknowledged()).count();
-
 		return counter >= quorum;
 	}
 
@@ -182,9 +181,10 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 	public void onReceivedVotersDecision(Message message) throws RemoteException {
 		
 		// release CS lock if voter initiator says he was denied access bcos he lacks majority votes
-		
 		// otherwise lock is kept
-
+		if(!message.isAcknowledged()) {
+			releaseLocks();
+		}
 	}
 
 	@Override
