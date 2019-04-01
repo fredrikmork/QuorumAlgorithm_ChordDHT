@@ -19,8 +19,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+            <state relative-caret-position="403">
+              <caret line="199" column="9" lean-forward="true" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/Operations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/OperationType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -127,12 +145,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554108907909</updated>
-      <workItem from="1554108909268" duration="2643000" />
+      <workItem from="1554108909268" duration="2817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2643000" />
+    <option name="totallyTimeSpent" value="2817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -152,12 +170,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.124096386" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.124096386" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -195,10 +213,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/OperationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+        <state relative-caret-position="403">
+          <caret line="199" column="9" lean-forward="true" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
         </state>
       </provider>
     </entry>
