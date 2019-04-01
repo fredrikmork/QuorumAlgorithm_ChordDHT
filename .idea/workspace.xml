@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" line="158" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" line="159" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
@@ -19,12 +19,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="214" column="12" selection-start-line="214" selection-start-column="12" selection-end-line="214" selection-end-column="12" />
+            <state relative-caret-position="542">
+              <caret line="230" column="16" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
               <folding>
-                <element signature="e#7381#7382#0" expanded="true" />
-                <element signature="e#7459#7460#0" expanded="true" />
-                <element signature="e#7718#7719#0" expanded="true" />
+                <element signature="e#7615#7616#0" expanded="true" />
+                <element signature="e#7693#7694#0" expanded="true" />
+                <element signature="e#7952#7953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,6 +119,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -127,6 +131,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -140,6 +147,92 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.TestWriteReadConsistencyPass">
+    <configuration name="TestConcurrentReadWriteConsistencyPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.clients.test.TestConcurrentReadWriteConsistencyPass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConcurrentWriteWriteConsistencyPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.clients.test.TestConcurrentWriteWriteConsistencyPass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuorumDistributedAlgorithmFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.clients.test.TestQuorumDistributedAlgorithmFail" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuorumDistributedAlgorithmPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.clients.test.TestQuorumDistributedAlgorithmPass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWriteReadConsistencyPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.clients.test.TestWriteReadConsistencyPass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestWriteReadConsistencyPass" />
+        <item itemvalue="JUnit.TestQuorumDistributedAlgorithmPass" />
+        <item itemvalue="JUnit.TestQuorumDistributedAlgorithmFail" />
+        <item itemvalue="JUnit.TestConcurrentWriteWriteConsistencyPass" />
+        <item itemvalue="JUnit.TestConcurrentReadWriteConsistencyPass" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,12 +243,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554108907909</updated>
-      <workItem from="1554108909268" duration="3161000" />
+      <workItem from="1554108909268" duration="3640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3161000" />
+    <option name="totallyTimeSpent" value="3640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,12 +327,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="214" column="12" selection-start-line="214" selection-start-column="12" selection-end-line="214" selection-end-column="12" />
+        <state relative-caret-position="542">
+          <caret line="230" column="16" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
           <folding>
-            <element signature="e#7381#7382#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7718#7719#0" expanded="true" />
+            <element signature="e#7615#7616#0" expanded="true" />
+            <element signature="e#7693#7694#0" expanded="true" />
+            <element signature="e#7952#7953#0" expanded="true" />
           </folding>
         </state>
       </provider>

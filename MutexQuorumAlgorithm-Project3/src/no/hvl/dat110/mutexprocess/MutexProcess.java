@@ -3,6 +3,7 @@ package no.hvl.dat110.mutexprocess;
 import java.io.File;
 import java.io.IOException;
 import java.rmi.AccessException;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -220,7 +221,16 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 	@Override
 	public void multicastVotersDecision(Message message) throws RemoteException {	
 		// multicast voters decision to the rest of the replicas 
+		for(String s : replicas){
+			try {
+				ProcessInterface pI = Util.registryHandle(s);
+				pI.onReceivedUpdateOperation(message);
 
+			} catch(NotBoundException e){
+				e.printStackTrace();
+
+			};
+		}
 	}
 
 	@Override
