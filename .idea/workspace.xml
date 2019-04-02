@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="197" column="9" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="197" selection-end-column="9" />
+            <state relative-caret-position="465">
+              <caret line="229" column="4" lean-forward="true" selection-start-line="229" selection-start-column="4" selection-end-line="229" selection-end-column="4" />
               <folding>
                 <element signature="e#7959#7960#0" expanded="true" />
                 <element signature="e#7982#7983#0" expanded="true" />
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="397" column="9" selection-start-line="397" selection-start-column="9" selection-end-line="397" selection-end-column="9" />
+            <state relative-caret-position="415">
+              <caret line="413" column="5" lean-forward="true" selection-start-line="413" selection-start-column="5" selection-end-line="413" selection-end-column="5" />
               <folding>
                 <element signature="e#9484#9493#0" expanded="true" />
               </folding>
@@ -297,7 +297,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554108907909</updated>
       <workItem from="1554108909268" duration="4531000" />
-      <workItem from="1554188944340" duration="3603000" />
+      <workItem from="1554188944340" duration="3715000" />
     </task>
     <servers />
   </component>
@@ -331,7 +331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8134000" />
+    <option name="totallyTimeSpent" value="8246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="197" column="9" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="197" selection-end-column="9" />
+        <state relative-caret-position="465">
+          <caret line="229" column="4" lean-forward="true" selection-start-line="229" selection-start-column="4" selection-end-line="229" selection-end-column="4" />
           <folding>
             <element signature="e#7959#7960#0" expanded="true" />
             <element signature="e#7982#7983#0" expanded="true" />
@@ -487,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="397" column="9" selection-start-line="397" selection-start-column="9" selection-end-line="397" selection-end-column="9" />
+        <state relative-caret-position="415">
+          <caret line="413" column="5" lean-forward="true" selection-start-line="413" selection-start-column="5" selection-end-line="413" selection-end-column="5" />
           <folding>
             <element signature="e#9484#9493#0" expanded="true" />
           </folding>
