@@ -14,6 +14,7 @@ import java.math.BigInteger;
 //import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.rmi.AccessException;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
@@ -309,10 +310,26 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 	
 	// multicast message to N/2 + 1 processes (random processes)
 	private boolean multicastMessage(Message message) throws AccessException, RemoteException {
-		
+		// remove this process from the list
+		// randomize - shuffle list each time - to get random processes each time
+		ArrayList<Message> list = new ArrayList<Message>();
+		Collections.shuffle(list);
 		// the same as MutexProcess - see MutexProcess
-		
-		return false;
+
+		synchronized (queueACK){
+			for(Message m : list){
+				try {
+					Registry nodeRegistry = Util.locateRegistry(m.getNodeIP());
+					ChordNodeInterface node = (ChordNodeInterface)nodeRegistry.lookup(m.getNodeID().toString());
+					queueACK.add(node.onMessageReceived(message));
+
+				} catch (NotBoundException e){
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return majorityAcknowledged();
 	}
 	
 	@Override
@@ -325,7 +342,9 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		/**
 		 *  case 1: Receiver is not accessing shared resource and does not want to: GRANT, acquirelock and reply
 		 */
-		
+		if(!CS_BUSY && !WANTS_TO_ENTER_CS){
+
+		}
 		
 		/**
 		 *  case 2: Receiver already has access to the resource: DENY and reply
