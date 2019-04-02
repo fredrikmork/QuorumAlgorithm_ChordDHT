@@ -90,7 +90,7 @@ public class FileManager extends Thread {
 		// generate the N replica keyids from the filename
 		
 		// create replicas
-		
+		createReplicaFiles(filename);
 		// findsuccessors for each file replica and save the result (fileID) for each successor 
 		
 		// if we find the successor node of fileID, we can retrieve the message associated with a fileID by calling the getFilesMetadata() of chordnode.

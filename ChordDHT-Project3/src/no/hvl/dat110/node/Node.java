@@ -437,6 +437,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 	public void multicastVotersDecision(Message message) throws RemoteException {
 		ArrayList<Message> list = new ArrayList<Message>(activenodesforfile);
 		message.setAcknowledged(majorityAcknowledged());
+
 		// multicast voters decision to the rest of the replicas (i.e activenodesforfile)
 		for(Message m : list){
 			try {
