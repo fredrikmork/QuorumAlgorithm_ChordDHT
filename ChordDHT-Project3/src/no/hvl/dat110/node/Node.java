@@ -345,6 +345,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		if(!CS_BUSY && !WANTS_TO_ENTER_CS){
 			message.setAcknowledged(true);
 			acquireLock();
+			return message;
 		}
 		
 		/**
@@ -352,6 +353,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		 */
 		if(CS_BUSY){
 			message.setAcknowledged(false);
+			return message;
 		}
 		
 		/**
@@ -365,9 +367,10 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 			} else {
 				message.setAcknowledged(false);
 			}
+			return message;
 		}
 		
-		return message;
+		return null;
 		
 	}
 	

@@ -153,6 +153,7 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		if(!CS_BUSY && !WANTS_TO_ENTER_CS) {
 			message.setAcknowledged(true);
 			acquireLock();
+			return message;
 		}
 		
 		/**
@@ -160,6 +161,7 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 		 */
 		if(CS_BUSY){
 			message.setAcknowledged(false);
+			return message;
 		}
 		
 		/**
@@ -172,10 +174,11 @@ public class MutexProcess extends UnicastRemoteObject implements ProcessInterfac
 				acquireLock();
 			} else {
 				message.setAcknowledged(false);
+				return message;
 			}
 		}
 		
-		return message;
+		return null;
 	}
 	
 	public boolean majorityAcknowledged() throws RemoteException {

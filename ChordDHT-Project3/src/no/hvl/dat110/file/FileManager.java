@@ -134,6 +134,8 @@ public class FileManager extends Thread {
 		// if majority votes
 		
 		// acquire lock to CS and also increments localclock
+
+		sleep(1000);
 		
 		// perform operation by calling Operations class
 		
@@ -172,6 +174,7 @@ public class FileManager extends Thread {
 		// if majority votes
 		
 		// acquire lock to CS and also increments localclock
+		sleep(1000);
 		
 		// perform operation by calling Operations class
 		
