@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
+            <state relative-caret-position="333">
+              <caret line="181" column="59" selection-start-line="181" selection-start-column="59" selection-end-line="181" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -234,8 +234,21 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.no.hvl.dat110.node.client.test in ChordDHT-Project3">
-    <configuration name="NodeClientTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.NodeClientTester" />
+    <configuration name="Process10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.Process10" />
+      <module name="ChordDHT-Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.node.client.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Process6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.Process6" />
       <module name="ChordDHT-Project3" />
       <extension name="coverage">
         <pattern>
@@ -260,7 +273,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChordRingReadTestPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Process9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.Process9" />
       <module name="ChordDHT-Project3" />
       <extension name="coverage">
         <pattern>
@@ -268,24 +282,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="no.hvl.dat110.node.client.test" />
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.ChordRingReadTestPass" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChordRingWriteTestFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChordDHT-Project3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="no.hvl.dat110.node.client.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="no.hvl.dat110.node.client.test" />
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.ChordRingWriteTestFail" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,10 +303,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.no.hvl.dat110.node.client.test in ChordDHT-Project3" />
-        <item itemvalue="JUnit.ChordRingReadTestPass" />
-        <item itemvalue="JUnit.ChordRingWriteTestFail" />
-        <item itemvalue="Application.NodeClientTester" />
+        <item itemvalue="Application.Process10" />
+        <item itemvalue="Application.Process9" />
         <item itemvalue="Application.Process8" />
+        <item itemvalue="Application.Process6" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +322,7 @@
       <updated>1554108907909</updated>
       <workItem from="1554108909268" duration="4531000" />
       <workItem from="1554188944340" duration="6348000" />
-      <workItem from="1554293853491" duration="3775000" />
+      <workItem from="1554293853491" duration="4572000" />
     </task>
     <servers />
   </component>
@@ -363,7 +359,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14654000" />
+    <option name="totallyTimeSpent" value="15451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +383,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22409639" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22409639" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,7 +391,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.124096386" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.124096386" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -589,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
+        <state relative-caret-position="333">
+          <caret line="181" column="59" selection-start-line="181" selection-start-column="59" selection-end-line="181" selection-end-column="59" />
         </state>
       </provider>
     </entry>
