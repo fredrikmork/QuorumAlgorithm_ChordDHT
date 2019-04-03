@@ -66,12 +66,12 @@ public class FileManager extends Thread {
 		// lookup(keyid) operation for each replica
 		// findSuccessor() function should be invoked to find the node with identifier id >= keyid and store the file (create & write the file)
 		
-		for(int i=0; i<replicafiles.length; i++) {
+		for (int i=0; i<replicafiles.length; i++) {
 			BigInteger fileID = (BigInteger) replicafiles[i];
 			ChordNodeInterface succOfFileID = chordnode.findSuccessor(fileID);
 			
 			// if we find the successor node of fileID, we can assign the file to the successor. This should always work even with one node
-			if(succOfFileID != null) {
+			if (succOfFileID != null) {
 				succOfFileID.addToFileKey(fileID);
 				String initialcontent = chordnode.getNodeIP()+"\n"+chordnode.getNodeID();
 				succOfFileID.createFileInNodeLocalDirectory(initialcontent, fileID);			// copy the file to the successor local dir
@@ -86,18 +86,26 @@ public class FileManager extends Thread {
 	 * @throws RemoteException 
 	 */
 	public Set<Message> requestActiveNodesForFile(String filename) throws RemoteException {
-		
+		Set<Message> messages = new HashSet<>();
 		// generate the N replica keyids from the filename
-		
 		// create replicas
 		createReplicaFiles(filename);
+
 		// findsuccessors for each file replica and save the result (fileID) for each successor 
-		
+		for(int i=0; i<replicafiles.length; i++) {
+			BigInteger fileID = (BigInteger) replicafiles[i];
+			ChordNodeInterface succOfFileID = chordnode.findSuccessor(fileID);
 		// if we find the successor node of fileID, we can retrieve the message associated with a fileID by calling the getFilesMetadata() of chordnode.
+			if (succOfFileID != null) {
+				Message m = succOfFileID.getFilesMetadata().get(fileID);
+				// save the message in a list but eliminate duplicated entries. e.g a node may be repeated because it maps more than one replicas to its id. (use checkDuplicateActiveNode)
+				if(!checkDuplicateActiveNode(messages, m))	{
+					messages.add(m);
+				}
+			}
+		}
 		
-		// save the message in a list but eliminate duplicated entries. e.g a node may be repeated because it maps more than one replicas to its id. (use checkDuplicateActiveNode)
-		
-		return null;	// return value is a Set of type Message		
+		return messages;	// return value is a Set of type Message
 	}
 	
 	private boolean checkDuplicateActiveNode(Set<Message> activenodesdata, Message nodetocheck) {
