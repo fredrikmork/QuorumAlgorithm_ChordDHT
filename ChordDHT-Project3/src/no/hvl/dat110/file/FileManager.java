@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -95,9 +96,11 @@ public class FileManager extends Thread {
 		for(int i=0; i<replicafiles.length; i++) {
 			BigInteger fileID = (BigInteger) replicafiles[i];
 			ChordNodeInterface succOfFileID = chordnode.findSuccessor(fileID);
-		// if we find the successor node of fileID, we can retrieve the message associated with a fileID by calling the getFilesMetadata() of chordnode.
+
+			// if we find the successor node of fileID, we can retrieve the message associated with a fileID by calling the getFilesMetadata() of chordnode.
 			if (succOfFileID != null) {
 				Message m = succOfFileID.getFilesMetadata().get(fileID);
+
 				// save the message in a list but eliminate duplicated entries. e.g a node may be repeated because it maps more than one replicas to its id. (use checkDuplicateActiveNode)
 				if(!checkDuplicateActiveNode(messages, m))	{
 					messages.add(m);
@@ -121,41 +124,56 @@ public class FileManager extends Thread {
 	public boolean requestToReadFileFromAnyActiveNode(String filename) throws RemoteException, NotBoundException {
 		
 		// get all the activenodes that have the file (replicas) i.e. requestActiveNodesForFile(String filename)
-			
+		Set<Message> activeNodes = requestActiveNodesForFile(filename);
+
 		// choose any available node
-		
+		Message m = activeNodes.iterator().next();
+
 		// locate the registry and see if the node is still active by retrieving its remote object
-		
+		Registry r = LocateRegistry.getRegistry(m.getNodeIP());
+		ChordNodeInterface node = (ChordNodeInterface) r.lookup(m.getNodeID().toString());
+
 		// build the operation to be performed - Read and request for votes in existing active node message
-		
+		Boolean request = node.requestReadOperation(m);
+
 		// set the active nodes holding replica files in the contact node (setActiveNodesForFile)
- 		
+		node.setActiveNodesForFile(activeNodes);
+
 		// set the NodeIP in the message (replace ip with )
-		
-		
 		// send a request to a node and get the voters decision
-		
+
 		// put the decision back in the message
-		
+
 		// multicast voters' decision to the rest of the nodes
-		
+
 		// if majority votes
-		
+
 		// acquire lock to CS and also increments localclock
 
-		sleep(1000);
-		
 		// perform operation by calling Operations class
-		
+
 		// optional: retrieve content of file on local resource
-		
+
 		// send message to let replicas release read lock they are holding
-		
+
 		// release locks after operations
-		
-			
-			
-		return false;		// change to your final answer
+		if(request) {
+			try {
+				node.multicastVotersDecision(m);
+				node.acquireLock();
+				sleep(1000);
+				Operations op = new Operations(node, m, activeNodes);
+				op.performOperation();
+				node.multicastUpdateOrReadReleaseLockOperation(m);
+				node.releaseLocks();
+			} catch (InterruptedException e){
+				e.printStackTrace();
+			}
+
+		}
+
+
+		return request;		// change to your final answer
 	}
 	
 	public boolean requestWriteToFileFromAnyActiveNode(String filename, String newcontent) throws RemoteException, NotBoundException {
@@ -182,7 +200,7 @@ public class FileManager extends Thread {
 		// if majority votes
 		
 		// acquire lock to CS and also increments localclock
-		sleep(1000);
+		//sleep(1000);
 		
 		// perform operation by calling Operations class
 		
@@ -196,7 +214,7 @@ public class FileManager extends Thread {
 
 	/**
 	 * create the localfile with the node's name and id as content of the file
-	 * @param nodename
+	 * dename
 	 * @throws RemoteException 
 	 */
 	public void createLocalFile() throws RemoteException {

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,8 +49,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="109" column="4" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+            <state relative-caret-position="360">
+              <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/interfaces/ChordNodeInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -318,14 +326,11 @@
       <updated>1554108907909</updated>
       <workItem from="1554108909268" duration="4531000" />
       <workItem from="1554188944340" duration="6348000" />
-      <workItem from="1554293853491" duration="1286000" />
+      <workItem from="1554293853491" duration="3775000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestWriteReadConsistencyPass - 2019.04.01 at 12h 24m 01s.xml">
-      <configuration name="TestWriteReadConsistencyPass" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestQuorumDistributedAlgorithmFail - 2019.04.01 at 12h 32m 01s.xml">
       <configuration name="TestQuorumDistributedAlgorithmFail" configurationId="JUnit" />
     </history-entry>
@@ -353,9 +358,12 @@
     <history-entry file="no_hvl_dat110_node_client_test_in_ChordDHT-Project3 - 2019.04.02 at 11h 27m 59s.xml">
       <configuration name="no.hvl.dat110.node.client.test in ChordDHT-Project3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="no_hvl_dat110_node_client_test_in_ChordDHT-Project3 - 2019.04.03 at 15h 08m 45s.xml">
+      <configuration name="no.hvl.dat110.node.client.test in ChordDHT-Project3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12165000" />
+    <option name="totallyTimeSpent" value="14654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +387,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22409639" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,7 +395,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.124096386" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.124096386" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -463,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/interfaces/ChordNodeInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -579,10 +580,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/interfaces/ChordNodeInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="109" column="4" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
         </state>
       </provider>
     </entry>
