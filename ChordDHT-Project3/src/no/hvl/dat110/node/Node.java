@@ -312,10 +312,11 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 	private boolean multicastMessage(Message message) throws AccessException, RemoteException {
 		// remove this process from the list
 		// randomize - shuffle list each time - to get random processes each time
+
 		ArrayList<Message> list = new ArrayList<Message>();
 		Collections.shuffle(list);
 		// the same as MutexProcess - see MutexProcess
-
+		quorum = activenodesforfile.size()/2 + 1;
 		synchronized (queueACK){
 			for(Message m : list){
 				try {
