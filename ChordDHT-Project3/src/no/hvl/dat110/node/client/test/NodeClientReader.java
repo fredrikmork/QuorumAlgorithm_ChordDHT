@@ -45,7 +45,7 @@ public class NodeClientReader extends Thread {
 		// use the hash to retrieve the ChordNodeInterface remote object from the registry
 		
 		// do: FileManager fm = new FileManager(ChordNodeInterface, StaticTracker.N);
-		
+		//FileManager fm =new FileManager( ci, StaticTracker.N);
 		// do: boolean succeed = fm.requestToReadFileFromAnyActiveNode(filename);
 	
 	}

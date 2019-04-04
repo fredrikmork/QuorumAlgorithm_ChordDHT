@@ -315,6 +315,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 
 		ArrayList<Message> list = new ArrayList<Message>();
 		Collections.shuffle(list);
+		queueACK.clear(); //Tømme listen først
 		// the same as MutexProcess - see MutexProcess
 		quorum = activenodesforfile.size()/2 + 1;
 		synchronized (queueACK){

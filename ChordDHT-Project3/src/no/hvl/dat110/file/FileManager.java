@@ -34,7 +34,7 @@ public class FileManager extends Thread {
 	private ChordNodeInterface chordnode;
 	
 	public FileManager(ChordNodeInterface chordnode, int N) throws RemoteException {
-		this.nfiles = N;
+		this.nfiles = N = 4;
 		replicafiles = new BigInteger[N];
 		this.chordnode = chordnode;
 	}
