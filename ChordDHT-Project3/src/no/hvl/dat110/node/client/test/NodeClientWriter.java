@@ -58,7 +58,6 @@ public class NodeClientWriter extends Thread {
 		} catch (NotBoundException | RemoteException e) {
 			e.printStackTrace();
 		}
-					
 		
 	}
 	
