@@ -2,7 +2,9 @@ package no.hvl.dat110.file;
 
 
 /**
+ *
  * @author tdoy
+ * @editor fredrikgmork
  * dat110 - demo/exercise
  */
 
@@ -28,7 +30,7 @@ import no.hvl.dat110.util.Util;
 public class FileManager extends Thread {
 	
 	private BigInteger[] replicafiles;					// array stores replicated files for distribution to matching nodes
-	private int nfiles = 4;								// let's assume each node manages nfiles (5 for now) - can be changed from the constructor
+	private int nfiles;								// let's assume each node manages nfiles (5 for now) - can be changed from the constructor
 	private ChordNodeInterface chordnode;
 	
 	public FileManager(ChordNodeInterface chordnode, int N) throws RemoteException {
@@ -63,23 +65,22 @@ public class FileManager extends Thread {
 		
 		// lookup(keyid) operation for each replica
 		// findSuccessor() function should be invoked to find the node with identifier id >= keyid and store the file (create & write the file)
-		
-		for (int i=0; i<replicafiles.length; i++) {
-			BigInteger fileID = (BigInteger) replicafiles[i];
+
+		for (BigInteger fileID : replicafiles) {
 			ChordNodeInterface succOfFileID = chordnode.findSuccessor(fileID);
-			
+
 			// if we find the successor node of fileID, we can assign the file to the successor. This should always work even with one node
 			if (succOfFileID != null) {
 				succOfFileID.addToFileKey(fileID);
-				String initialcontent = chordnode.getNodeIP()+"\n"+chordnode.getNodeID();
-				succOfFileID.createFileInNodeLocalDirectory(initialcontent, fileID);			// copy the file to the successor local dir
-			}			
+				String initialcontent = chordnode.getNodeIP() + "\n" + chordnode.getNodeID();
+				succOfFileID.createFileInNodeLocalDirectory(initialcontent, fileID);            // copy the file to the successor local dir
+			}
 		}
 	}
 	
 	/**
 	 * 
-	 * @param filename
+	 * @param  filename
 	 * @return list of active nodes in a list of messages having the replicas of this file
 	 * @throws RemoteException 
 	 */
@@ -90,8 +91,7 @@ public class FileManager extends Thread {
 		createReplicaFiles(filename);
 
 		// findsuccessors for each file replica and save the result (fileID) for each successor 
-		for(int i=0; i<replicafiles.length; i++) {
-			BigInteger fileID = (BigInteger) replicafiles[i];
+		for (BigInteger fileID : replicafiles) {
 			ChordNodeInterface succOfFileID = chordnode.findSuccessor(fileID);
 
 			// if we find the successor node of fileID, we can retrieve the message associated with a fileID by calling the getFilesMetadata() of chordnode.
@@ -99,7 +99,7 @@ public class FileManager extends Thread {
 				Message m = succOfFileID.getFilesMetadata().get(fileID);
 
 				// save the message in a list but eliminate duplicated entries. e.g a node may be repeated because it maps more than one replicas to its id. (use checkDuplicateActiveNode)
-				if(!checkDuplicateActiveNode(messages, m))	{
+				if (!checkDuplicateActiveNode(messages, m)) {
 					messages.add(m);
 				}
 			}
@@ -183,7 +183,7 @@ public class FileManager extends Thread {
 		// multicast voters' decision to the rest of the nodes
 		// if majority votes
 		// acquire lock to CS and also increments localclock
-		//sleep(1000);
+		// sleep(1000);
 		// perform operation by calling Operations class
 		// update replicas and let replicas release CS lock they are holding
 		
@@ -193,18 +193,11 @@ public class FileManager extends Thread {
 				node.multicastVotersDecision(m);
 				node.acquireLock();
 				sleep(1000);
-
 			}catch (InterruptedException e){
 				e.printStackTrace();
 			}
 			Operations op = new Operations(node, m, activeNodes);
 			op.performOperation();
-			try {
-				distributeReplicaFiles();
-			} catch (IOException e){
-				e.printStackTrace();
-			}
-
 			node.multicastUpdateOrReadReleaseLockOperation(m);
 			node.releaseLocks();
 		}
@@ -232,7 +225,7 @@ public class FileManager extends Thread {
 				}
 			} catch (IOException e) {
 				
-				//e.printStackTrace();
+				e.printStackTrace();
 			}
 		}
 		
@@ -249,7 +242,7 @@ public class FileManager extends Thread {
 									
 		} catch (IOException e) {
 			
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 	}
 }

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" line="201" mnemonic="8" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" afterDir="false" />
@@ -40,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
+            <state relative-caret-position="375">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -49,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="198" column="13" lean-forward="true" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+            <state relative-caret-position="2236">
+              <caret line="218" column="17" lean-forward="true" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -322,7 +319,7 @@
       <updated>1554108907909</updated>
       <workItem from="1554108909268" duration="4531000" />
       <workItem from="1554188944340" duration="6348000" />
-      <workItem from="1554293853491" duration="5897000" />
+      <workItem from="1554293853491" duration="6492000" />
     </task>
     <servers />
   </component>
@@ -359,7 +356,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16776000" />
+    <option name="totallyTimeSpent" value="17371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,9 +386,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.08313253" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.036144577" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.036144577" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.124096386" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.124096386" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -584,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -609,10 +599,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="198" column="13" lean-forward="true" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+        <state relative-caret-position="2236">
+          <caret line="218" column="17" lean-forward="true" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
         </state>
       </provider>
     </entry>
