@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="320" column="34" lean-forward="true" selection-start-line="320" selection-start-column="34" selection-end-line="320" selection-end-column="34" />
+            <state relative-caret-position="376">
+              <caret line="319" column="49" lean-forward="true" selection-start-line="319" selection-start-column="49" selection-end-line="319" selection-end-column="49" />
               <folding>
                 <element signature="e#9447#9456#0" expanded="true" />
               </folding>
@@ -38,33 +37,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
+            <state relative-caret-position="440">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding>
                 <element signature="e#620#621#0" expanded="true" />
                 <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="-1048">
               <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/interfaces/ChordNodeInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -85,9 +79,9 @@
       <list>
         <option value="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientWriter.java" />
+        <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java" />
-        <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" />
       </list>
     </option>
   </component>
@@ -317,7 +311,7 @@
       <updated>1554108907909</updated>
       <workItem from="1554108909268" duration="4531000" />
       <workItem from="1554188944340" duration="6348000" />
-      <workItem from="1554293853491" duration="6969000" />
+      <workItem from="1554293853491" duration="8127000" />
     </task>
     <servers />
   </component>
@@ -354,7 +348,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17848000" />
+    <option name="totallyTimeSpent" value="19006000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/ChordRingReadTestPass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -579,23 +566,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="320" column="34" lean-forward="true" selection-start-line="320" selection-start-column="34" selection-end-line="320" selection-end-column="34" />
-          <folding>
-            <element signature="e#9447#9456#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java">
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
+        <state relative-caret-position="376">
+          <caret line="319" column="49" lean-forward="true" selection-start-line="319" selection-start-column="49" selection-end-line="319" selection-end-column="49" />
           <folding>
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#9447#9456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -609,8 +592,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="-1048">
           <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

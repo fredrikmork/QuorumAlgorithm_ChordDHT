@@ -6,6 +6,7 @@ package no.hvl.dat110.node.client.test;
  *
  */
 
+import java.math.BigInteger;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
@@ -39,15 +40,26 @@ public class NodeClientReader extends Thread {
 
 		
 		// connect to an active chord node - can use the process defined in StaticTracker 
-		
+
+
 		// Compute the hash of the node's IP address
-		
+		Registry r = Util.tryIPs();
+
 		// use the hash to retrieve the ChordNodeInterface remote object from the registry
-		
-		// do: FileManager fm = new FileManager(ChordNodeInterface, StaticTracker.N);
-		//FileManager fm =new FileManager( ci, StaticTracker.N);
-		// do: boolean succeed = fm.requestToReadFileFromAnyActiveNode(filename);
-	
+		BigInteger hash = Hash.hashOf(r.toString());
+		try{
+			ChordNodeInterface node = (ChordNodeInterface) r.lookup(hash.toString());
+
+			// do: FileManager fm = new FileManager(ChordNodeInterface, StaticTracker.N);
+			FileManager fm =new FileManager(node, StaticTracker.N);
+
+			// do: boolean succeed = fm.requestToReadFileFromAnyActiveNode(filename);
+			succeed = fm.requestToReadFileFromAnyActiveNode(filename);
+
+		} catch (NotBoundException | RemoteException e) {
+			e.printStackTrace();
+		}
+
 	}
 	
 	public boolean isSucceed() {
