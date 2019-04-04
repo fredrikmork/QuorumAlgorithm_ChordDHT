@@ -6,10 +6,7 @@ package no.hvl.dat110.file;
  * dat110 - demo/exercise
  */
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigInteger;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -196,13 +193,20 @@ public class FileManager extends Thread {
 				node.multicastVotersDecision(m);
 				node.acquireLock();
 				sleep(1000);
-				Operations op = new Operations(node, m, activeNodes);
-				op.performOperation();
-				node.multicastUpdateOrReadReleaseLockOperation(m);
-				node.releaseLocks();
+
 			}catch (InterruptedException e){
 				e.printStackTrace();
 			}
+			Operations op = new Operations(node, m, activeNodes);
+			op.performOperation();
+			try {
+				distributeReplicaFiles();
+			} catch (IOException e){
+				e.printStackTrace();
+			}
+
+			node.multicastUpdateOrReadReleaseLockOperation(m);
+			node.releaseLocks();
 		}
 		return request;  // change to your final answer
 
