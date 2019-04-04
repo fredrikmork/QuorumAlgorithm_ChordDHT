@@ -44,7 +44,7 @@ public class NodeClientReader extends Thread {
 		Registry r = Util.tryIPs();
 
 		// use the hash to retrieve the ChordNodeInterface remote object from the registry
-		BigInteger hash = Hash.hashOf(r.toString());
+		BigInteger hash = Hash.hashOf("process1");
 		try{
 			ChordNodeInterface node = (ChordNodeInterface) r.lookup(hash.toString());
 

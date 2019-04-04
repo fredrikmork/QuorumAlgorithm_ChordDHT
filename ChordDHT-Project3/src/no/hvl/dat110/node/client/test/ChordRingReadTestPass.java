@@ -72,6 +72,17 @@ class ChordRingReadTestPass {
 	@Test
 	void test() throws RemoteException, InterruptedException {
 		// test quorum-based consistency protocol - must have enough votes
+		p1.releaseLocks();
+		p2.releaseLocks();
+		p3.releaseLocks();
+		p4.releaseLocks();
+		p5.releaseLocks();
+		p6.releaseLocks();
+		p7.releaseLocks();
+		p8.releaseLocks();
+		p9.releaseLocks();
+		p10.releaseLocks();
+
 
 		NodeClientReader r = new NodeClientReader("process1");
 		r.start();

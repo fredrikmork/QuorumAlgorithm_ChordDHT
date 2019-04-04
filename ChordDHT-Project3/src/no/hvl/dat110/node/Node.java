@@ -313,12 +313,13 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		// remove this process from the list
 		// randomize - shuffle list each time - to get random processes each time
 
-		ArrayList<Message> list = new ArrayList<Message>();
+		ArrayList<Message> list = new ArrayList<Message>(activenodesforfile);
 		Collections.shuffle(list);
-		queueACK.clear(); //Tømme listen først
+
 		// the same as MutexProcess - see MutexProcess
 		quorum = activenodesforfile.size()/2 + 1;
 		synchronized (queueACK){
+			queueACK.clear(); //Tømme listen først
 			for(Message m : list){
 				try {
 					Registry nodeRegistry = Util.locateRegistry(m.getNodeIP());
@@ -329,9 +330,9 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 					e.printStackTrace();
 				}
 			}
+			return majorityAcknowledged();
 		}
 
-		return majorityAcknowledged();
 	}
 	
 	@Override
@@ -383,6 +384,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		// check if it is the majority or not
 		// return the decision (true or false)
 		counter = (int) queueACK.stream().filter(x -> x.isAcknowledged()).count();
+
 		return counter >= quorum;
 	}
 

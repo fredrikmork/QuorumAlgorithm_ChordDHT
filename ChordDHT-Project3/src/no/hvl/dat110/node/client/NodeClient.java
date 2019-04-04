@@ -22,7 +22,7 @@ public class NodeClient {
 		// Lookup(key) - Use this class as a client that is requesting for a new file and needs the identifier and IP of the node where the file is located
 		// assume you have a list of nodes in the tracker class and select one randomly. We can use the Tracker class for this purpose
 		
-		String fileresource = "process2"+1;				// the name of the resource we want to lookup (+1 means replica 1)
+		String fileresource = "process1";				// the name of the resource we want to lookup (+1 means replica 1)
 		
 		BigInteger keyid = Hash.hashOf(fileresource); 	// obtain the identifier for fileresource from the name space (0,1,...,2^mbit)
 		
