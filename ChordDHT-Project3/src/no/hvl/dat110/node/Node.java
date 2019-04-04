@@ -229,7 +229,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 		File file = new File(destpath);
 		
 		try {
-			if(!file.exists())					// if replica already exist don't destroy it
+			if(!file.exists())				// if replica already exist don't destroy it
 				file.createNewFile();
 		} catch (IOException e) {
 			//e.printStackTrace();

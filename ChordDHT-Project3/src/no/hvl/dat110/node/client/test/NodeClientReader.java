@@ -2,8 +2,8 @@ package no.hvl.dat110.node.client.test;
 
 /**
  * exercise/demo purpose in dat110
- * @author tdoy
  *
+ * @author tdoy
  */
 
 import java.math.BigInteger;
@@ -21,47 +21,48 @@ import no.hvl.dat110.util.Util;
 
 public class NodeClientReader extends Thread {
 
-	private boolean succeed = false;
-	
-	private String filename;
-	
-	public NodeClientReader(String filename) {
-		this.filename = filename;
-	}
-	
-	public void run() {
-		sendRequest();
-	}
-	
-	private void sendRequest() {
-		
-		// Lookup(key) - Use this class as a client that is requesting for a new file and needs the identifier and IP of the node where the file is located
-		// assume you have a list of nodes in the tracker class and select one randomly. We can use the Tracker class for this purpose
+    private boolean succeed = false;
 
-		// connect to an active chord node - can use the process defined in StaticTracker 
+    private String filename;
 
-		// Compute the hash of the node's IP address
-		Registry r = Util.tryIPs();
+    public NodeClientReader(String filename) {
+        this.filename = filename;
+    }
 
-		// use the hash to retrieve the ChordNodeInterface remote object from the registry
-		BigInteger hash = Hash.hashOf("process1");
-		try{
-			ChordNodeInterface node = (ChordNodeInterface) r.lookup(hash.toString());
+    public void run() {
+        sendRequest();
+    }
 
-			// do: FileManager fm = new FileManager(ChordNodeInterface, StaticTracker.N);
-			FileManager fm =new FileManager(node, StaticTracker.N);
+    private void sendRequest() {
 
-			// do: boolean succeed = fm.requestToReadFileFromAnyActiveNode(filename);
-			succeed = fm.requestToReadFileFromAnyActiveNode(filename);
+        // Lookup(key) - Use this class as a client that is requesting for a new file and needs the identifier and IP of the node where the file is located
+        // assume you have a list of nodes in the tracker class and select one randomly. We can use the Tracker class for this purpose
 
-		} catch (NotBoundException | RemoteException e) {
-			e.printStackTrace();
-		}
+        // connect to an active chord node - can use the process defined in StaticTracker
 
-	}
-	
-	public boolean isSucceed() {
-		return succeed;
-	}
+        // Compute the hash of the node's IP address
+        Registry r = Util.tryIPs();
+
+        // use the hash to retrieve the ChordNodeInterface remote object from the registry
+        BigInteger hash = Hash.hashOf("process1");
+
+        try {
+            ChordNodeInterface node = (ChordNodeInterface) r.lookup(hash.toString());
+
+            // do: FileManager fm = new FileManager(ChordNodeInterface, StaticTracker.N);
+            FileManager fm = new FileManager(node, StaticTracker.N);
+
+            // do: boolean succeed = fm.requestToReadFileFromAnyActiveNode(filename);
+            succeed = fm.requestToReadFileFromAnyActiveNode(filename);
+
+        } catch (NotBoundException | RemoteException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public boolean isSucceed() {
+        return succeed;
+    }
 
 }
