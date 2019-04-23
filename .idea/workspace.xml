@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="218">
+              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmPass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -53,6 +72,7 @@
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/ChordNodeContainer.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" />
         <option value="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" />
+        <option value="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" />
       </list>
     </option>
   </component>
@@ -74,6 +94,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,8 +146,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.no.hvl.dat110.node.client.test in ChordDHT-Project3">
+  <component name="RunManager" selected="JUnit.no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3">
     <configuration name="Process1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.Process1" />
       <module name="ChordDHT-Project3" />
@@ -199,18 +219,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChordRingReadTestPass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChordDHT-Project3" />
+    <configuration name="no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MutexQuorumAlgorithm-Project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="no.hvl.dat110.node.client.test.*" />
+          <option name="PATTERN" value="no.hvl.dat110.clients.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="no.hvl.dat110.node.client.test" />
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.node.client.test.ChordRingReadTestPass" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.clients.test" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" />
         <item itemvalue="JUnit.no.hvl.dat110.node.client.test in ChordDHT-Project3" />
         <item itemvalue="JUnit.ChordRingReadTestPass" />
         <item itemvalue="Application.Process9" />
         <item itemvalue="Application.Process1" />
-        <item itemvalue="JUnit.ChordRingReadTestPass.test" />
       </list>
     </recent_temporary>
   </component>
@@ -257,16 +275,11 @@
       <workItem from="1554812074914" duration="42000" />
       <workItem from="1554812365007" duration="50000" />
       <workItem from="1556039393886" duration="587000" />
+      <workItem from="1556040027104" duration="235000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChordRingReadTestPass - 2019.04.04 at 12h 15m 03s.xml">
-      <configuration name="ChordRingReadTestPass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChordRingReadTestPass - 2019.04.04 at 12h 15m 36s.xml">
-      <configuration name="ChordRingReadTestPass" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ChordRingReadTestPass - 2019.04.04 at 12h 19m 55s.xml">
       <configuration name="ChordRingReadTestPass" configurationId="JUnit" />
     </history-entry>
@@ -291,9 +304,15 @@
     <history-entry file="no_hvl_dat110_node_client_test_in_ChordDHT-Project3 - 2019.04.04 at 12h 51m 14s.xml">
       <configuration name="no.hvl.dat110.node.client.test in ChordDHT-Project3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="no_hvl_dat110_clients_test_in_MutexQuorumAlgorithm-Project3 - 2019.04.23 at 19h 22m 22s.xml">
+      <configuration name="no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="no_hvl_dat110_clients_test_in_MutexQuorumAlgorithm-Project3 - 2019.04.23 at 19h 23m 22s.xml">
+      <configuration name="no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25304000" />
+    <option name="totallyTimeSpent" value="25539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -306,8 +325,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -316,7 +336,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.90772533" weight="0.30843374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.90701" visible="true" weight="0.30843374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,8 +344,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.036144577" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49570817" visible="true" weight="0.33012047" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50429183" side_tool="true" visible="true" weight="0.33012047" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49499285" weight="0.08674699" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.09298999" side_tool="true" visible="true" weight="0.30843374" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -408,24 +428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestWriteReadConsistencyPass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmPass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="49" column="59" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -605,10 +611,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="218">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
         </state>
       </provider>
     </entry>
