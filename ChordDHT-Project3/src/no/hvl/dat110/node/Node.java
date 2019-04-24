@@ -447,7 +447,7 @@ public class Node extends UnicastRemoteObject implements ChordNodeInterface {
 			try {
 				Registry nodeRegistry = Util.locateRegistry(m.getNodeIP());
 				ChordNodeInterface node = (ChordNodeInterface)nodeRegistry.lookup(m.getNodeID().toString());
-				node.onMessageReceived(message);
+				node.onReceivedVotersDecision(message);
 
 			} catch (NotBoundException e){
 				e.printStackTrace();

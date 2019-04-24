@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b452afb-10cf-4482-973e-a598ac6b7e13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,29 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
+        <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmPass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="516">
+              <caret line="452" column="36" lean-forward="true" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -66,13 +47,13 @@
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientTester.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/test/NodeClientWriter.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/client/NodeClient.java" />
-        <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Operations.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/OperationType.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/rpc/ChordNodeContainer.java" />
         <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/file/FileManager.java" />
         <option value="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java" />
         <option value="$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java" />
+        <option value="$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java" />
       </list>
     </option>
   </component>
@@ -101,46 +82,25 @@
           <expand>
             <path>
               <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
+              <item name="ChordDHT-Project3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
+              <item name="ChordDHT-Project3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat110" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
+              <item name="ChordDHT-Project3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dat110" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
+              <item name="ChordDHT-Project3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dat110" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat110" type="462c0819:PsiDirectoryNode" />
-              <item name="mutexprocess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dat110-project3-startcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MutexQuorumAlgorithm-Project3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat110" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,14 +235,11 @@
       <workItem from="1554812074914" duration="42000" />
       <workItem from="1554812365007" duration="50000" />
       <workItem from="1556039393886" duration="587000" />
-      <workItem from="1556040027104" duration="235000" />
+      <workItem from="1556040027104" duration="899000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChordRingReadTestPass - 2019.04.04 at 12h 19m 55s.xml">
-      <configuration name="ChordRingReadTestPass" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ChordRingReadTestPass - 2019.04.04 at 12h 20m 59s.xml">
       <configuration name="ChordRingReadTestPass" configurationId="JUnit" />
     </history-entry>
@@ -310,9 +267,12 @@
     <history-entry file="no_hvl_dat110_clients_test_in_MutexQuorumAlgorithm-Project3 - 2019.04.23 at 19h 23m 22s.xml">
       <configuration name="no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="no_hvl_dat110_clients_test_in_MutexQuorumAlgorithm-Project3 - 2019.04.23 at 19h 24m 28s.xml">
+      <configuration name="no.hvl.dat110.clients.test in MutexQuorumAlgorithm-Project3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25539000" />
+    <option name="totallyTimeSpent" value="26203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,7 +287,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -336,7 +296,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.90701" visible="true" weight="0.30843374" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.90701" weight="0.30843374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,8 +304,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.036144577" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49499285" weight="0.08674699" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.09298999" side_tool="true" visible="true" weight="0.30843374" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49427754" visible="true" weight="0.08674699" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50572246" side_tool="true" visible="true" weight="0.08674699" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -554,13 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2860">
-          <caret line="229" column="8" lean-forward="true" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -618,6 +571,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/mutexprocess/MutexProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -625,10 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MutexQuorumAlgorithm-Project3/src/no/hvl/dat110/clients/test/TestQuorumDistributedAlgorithmFail.java">
+    <entry file="file://$PROJECT_DIR$/ChordDHT-Project3/src/no/hvl/dat110/node/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        <state relative-caret-position="516">
+          <caret line="452" column="36" lean-forward="true" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
         </state>
       </provider>
     </entry>
